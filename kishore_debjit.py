@@ -9,6 +9,7 @@ def ksp(W,wt,val,n):
         f[n-1]=1
         return max(val[n-1]+ksp(W-wt[n-1],wt,val,n-1),ksp(W,wt,val,n-1))
 
+    
 n=int(input('enter no. of elements'))
 val=list(map(int,input('enter the values of the elements in order: ').split()))
 wt=list(map(int,input('enter the weights of the elements in order: ').split()))
